@@ -1,0 +1,20 @@
+//import { createApp } from 'vue'
+//import App from './App.vue'
+
+//createApp(App).mount('#app')
+
+const app = Vue.createApp({
+    data () {
+        return {
+            cart: 0,
+            premium: false
+
+        }
+    },
+    methods: {
+
+    },
+    computed: {
+    }
+
+})

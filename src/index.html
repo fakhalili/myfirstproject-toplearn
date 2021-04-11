@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html la="fa">
+<head>
+    <meta charset="UTF-8" />
+    <!-- 2021-03-08 -->
+    <title>My First Vue3 Project</title>
+    <!-- Import Css files-->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Add Vue.js to the project as a CDN package on the page -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav-bar"></div>
+        <div class="cart"> سبد خرید ({{cart}}) </div>
+        <product-display :premium="premium"></product-display>
+    </div>
+    <!-- Import APP -->
+    <script src="./main.js"></script>
+    <!-- Import Component -->
+    <script src="./components/ProductDisplay.js"></script>
+    
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
+</body>
+</html>
